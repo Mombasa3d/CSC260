@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>Laaaayout Demo Headeeeeer</header>
+    <nav>
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Heroes", "Index", "Hero", new { @id = "1" }, null)
+        @Html.ActionLink("Map List", "MapList", "Hero")
+        @Html.ActionLink("About Us", "AboutUs", "Home")
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        &copy; MoobaTime @DateTime.Now.Year
+    </footer>
+</body>
+</html>

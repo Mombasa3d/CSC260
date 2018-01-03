@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    
+</head>
+
+<body>
+    <div id="header">
+        <h1>Default Layout</h1>
+    </div>
+
+    <div id="nav">
+        <p>Default Nav</p>
+    </div>
+
+    <div id="body">
+        @RenderBody()
+    </div>
+
+    <div id="footer">
+        <p>&copy; Brandon Conyers</p>
+    </div>
+
+</body>
+</html>

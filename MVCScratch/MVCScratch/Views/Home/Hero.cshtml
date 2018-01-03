@@ -1,0 +1,21 @@
+﻿@model MVCScratch.Models.HeroModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hero</title>
+</head>
+<body>
+    <h1>@Model.HeroName</h1>
+    <p>@Model.HeroType</p>
+    <div> 
+        @Html.ActionLink("Add New Hero", "AddNewHero")
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@using ActionResultLab.Models
+@model ActionResultLab.Models.Character
+
+<link rel="stylesheet" type="text/css" href="~/Content/CharDisp.css"> 
+
+@{ 
+    Character testChar = new Character();
+}
+<div class="character-stats">
+    <table id="character-table">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Level
+            </th>
+            <th>
+                HP
+            </th>
+            <th>
+                IQ
+            </th>
+            <th>
+                ME
+            </th>
+            <th>
+                MA
+            </th>
+            <th>
+                PS
+            </th>
+            <th>
+                PP
+            </th>
+            <th>
+                PE
+            </th>
+            <th>
+                PB
+            </th>
+            <th>
+                Spd
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Model.Name
+            </td>
+            <td>
+                @Model.Level
+            </td>
+            <td>
+                @Model.HealthPoints
+            </td>
+            <td>
+                @Model.Attributes["IQ"]
+            </td>
+            <td>
+                @Model.Attributes["ME"]
+            </td>
+            <td>
+                @Model.Attributes["MA"]
+            </td>
+            <td>
+                @Model.Attributes["PS"]
+            </td>
+            <td>
+                @Model.Attributes["PP"]
+            </td>
+            <td>
+                @Model.Attributes["PE"]
+            </td>
+            <td>
+                @Model.Attributes["PB"]
+            </td>
+            <td>
+                @Model.Attributes["Spd"]
+            </td>
+        </tr>
+
+    </table>
+</div>

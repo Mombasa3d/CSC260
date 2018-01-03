@@ -1,0 +1,29 @@
+﻿body {
+
+}
+
+.character-stats{
+    width:100%;
+    text-align:center; 
+    background-color:burlywood;
+}
+
+#character-table td {
+    text-align: left;
+    background-color: aliceblue;
+    height: 50px;
+    border-right: 2px black;
+    border: solid;
+}
+
+#character-table th {
+    text-align: center;
+    height: 100px;
+    border-right: 2px black;
+    border: solid;
+}
+
+table{
+    width:100%;
+    min-height: 200px;
+}
